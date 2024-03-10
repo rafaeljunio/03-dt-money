@@ -1,4 +1,3 @@
-import { Summary } from "./components/Summary";
 import { Transactions } from "./pages/Transactions";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
@@ -11,7 +10,6 @@ export function App() {
       <GlobalStyle />
       
       <Transactions/>
-      <Summary/>
     </ThemeProvider>
   )
 }
