@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de sites",
+      "type": "income",
+      "category": "Venda",
+      "price": 12000,
+      "createdAt": "2022-01-01T01:33:33.500Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Venda",
+      "price": 48,
+      "createdAt": "2022-01-01T12:33:33.500Z"
+    },
+    {
+      "description": "Desenvolvimento de Aplicativo",
+      "price": 7500,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-03-11T14:44:08.772Z",
+      "id": 3
+    },
+    {
+      "description": "Iorgute de Banada",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-03-11T15:08:01.571Z",
+      "id": 4
+    }
+  ]
+}
