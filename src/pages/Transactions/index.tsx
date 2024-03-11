@@ -1,13 +1,17 @@
-import { useContext } from "react";
-import { Header } from "../../components/Header";
-import { Summary } from "../../components/Summary";
-import { TransactionsContext } from "../../contexts/TransactionsContext";
-import { SearchForm } from "./components/SearchForm";
-import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
-import { dateFormatter, priceFormatter } from "../../utils/formatter";
+import { useContext } from 'react'
+import { Header } from '../../components/Header'
+import { Summary } from '../../components/Summary'
+import { TransactionsContext } from '../../contexts/TransactionsContext'
+import { SearchForm } from './components/SearchForm'
+import {
+  PriceHighLight,
+  TransactionsContainer,
+  TransactionsTable,
+} from './styles'
+import { dateFormatter, priceFormatter } from '../../utils/formatter'
 
 export function Transactions() {
-  const {transactions} = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext)
 
   return (
     <div>
@@ -15,12 +19,11 @@ export function Transactions() {
       <Summary />
 
       <TransactionsContainer>
-
         <SearchForm />
 
         <TransactionsTable>
           <tbody>
-            {transactions.map(transaction => (
+            {transactions.map((transaction) => (
               <tr key={transaction.id}>
                 <td width="50%">{transaction.description}</td>
                 <td>
